@@ -1,0 +1,5 @@
+numpy==1.16.1
+gym==0.12.1
+setuptools==39.0.1
+pyglet==1.3.2
+Box2D==2.3.2
