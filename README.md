@@ -1,7 +1,7 @@
 # Trials
  A 2D Bike OpenAI Gym compatible environment for deep reinforcement learning, inspired by the RedLynx title: [Trials](https://www.ubisoft.com/en-us/game/trials-rising/).
 
-<img src="docs/images/trials_env.gif" align="center" width="100%"/>
+<img src="docs/images/trials_trained_simple_terrain.gif" align="center" width="100%"/>
 
 ## Installation
 
@@ -65,3 +65,6 @@ if __name__ == "__main__":
             obs = env.reset()
 
     env.close() # You don't really get here.
+```
+
+<img src="docs/images/trials_env.gif" align="center" width="100%"/>

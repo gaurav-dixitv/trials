@@ -493,7 +493,7 @@ class Trials(gym.Env, EzPickle):
     camera_height = primary_height * 0.03
 
     terrain_step = 2
-    terrain_length = 120    # in steps
+    terrain_length = 300    # in steps
     terrain_height = 500
     terrain_startpad = 10    # in steps
 
@@ -701,7 +701,7 @@ class Trials(gym.Env, EzPickle):
     def _create_trees(self):
         self.trees = []
 
-        tree_count = np.random.randint(10, 12)
+        tree_count = np.random.randint(15, 20)
 
         def sample(a, b): return (b - a) * np.random.random_sample() + a
 
@@ -869,7 +869,7 @@ class Trials(gym.Env, EzPickle):
         pos = self.bike.chassis.position
         # The bike needs to be near the left edge and bottom of the camera
         self.viewer.set_bounds(pos[0] - self.camera_width * 0.5, pos[0] +
-                               self.camera_width * 1.5, pos[1] - self.camera_height * 0.6, pos[1] + self.camera_height * 1.4)
+                               self.camera_width * 1.5, pos[1] - self.camera_height * 0.8, pos[1] + self.camera_height * 1.2)
 
         for poly, color in self.terrain_poly:
             if poly[1][0] < self.scroll:
